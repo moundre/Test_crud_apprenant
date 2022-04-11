@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>liste-apprenant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list *ngFor="let liste of listeApp">
+  <h1>{{liste.nom}} {{liste.prenom}}</h1>
+  <h3>{{liste.email}}</h3>
+</ion-list>
+<ion-button routerLink="/ajout-apprenant">Inscription</ion-button>
+</ion-content>

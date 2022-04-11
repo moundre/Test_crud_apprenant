@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-title>ajout-apprenant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form #user="ngForm" (ngSubmit)="ajoutApprenant(user)">
+  
+  <ion-item>
+    <ion-label position="floating">Prénom</ion-label>
+    <ion-input clear-input  type="text" name="prenom" ngModel required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input clear-input  type="text" name="nom" ngModel required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input clear-input  type="email" name="email" ngModel required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Téléphone</ion-label>
+    <ion-input clear-input  type="phone" name="telephone" ngModel required></ion-input>
+  </ion-item><br><br>
+ <ion-button  color="success" shape="round" size="small" expand="full" type="submit">Ajouter</ion-button>
+</form>
+ 
+</ion-content>
